@@ -5,7 +5,9 @@ const btn = document.getElementById('download');
 btn.addEventListener('click', () => {
     let data = url.value;
     console.log(data);
-    window.Bridge.dataUrl(data);
+    let qualityLabel = "720p";
+    console.log(qualityLabel);
+    window.Bridge.dataUrl(data, qualityLabel);
     console.log('clicked');
 
 });
